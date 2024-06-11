@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 600px;
+    background: url(./asset/img/ha-long.jpg) no-repeat center/cover;
+}
+
+nav {
+    background: rgba(20, 20, 20, 0.678);
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+header nav a {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.reservation {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 110px;
+    width: 65%;
+    background: rgba(20, 20, 20, 0.678);
+    border-radius: 5px;
+    /* transform: translate(50%); */
+    left: 17%;
+}
+
+.reservation input {
+    margin: auto 20px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.reservation button {
+    margin: auto 20px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(221, 224, 40);
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: rgba(0, 0, 0, 0.904);
+}
+
+.deroulement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us img {
+    width: 300px;
+}
+
+.about-us p {
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.deroulement .number {
+    font-size: 4rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: rgb(221, 224, 40);
+    font-weight: 900;
+}
+
+.deroulement h3,
+.about-us h2 {
+    color: rgb(221, 224, 40);
+}
+
+.deroulement p {
+    color: whitesmoke;
+    margin: 10px 20px;
+}
+
+.der-1,
+.der-2,
+.der-3 {
+    margin: 20px;
+    width: 25%;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    border: 1px solid rgb(221, 224, 40);
+    border-radius: 10px;
+}
+
+.about-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
