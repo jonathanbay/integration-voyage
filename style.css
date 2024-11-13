@@ -10,28 +10,34 @@ header {
     background: url(./asset/img/ha-long.jpg) no-repeat center/cover;
 }
 
-nav {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
     background: rgba(20, 20, 20, 0.678);
     height: 60px;
 }
 
-#logo {
+.navbar #logo {
     color: rgb(221, 224, 40);
     font-size: 1.8rem;
     font-weight: 600;
-    transform: rotate(-20deg);
+    padding: 0 0 0 60px;
+
 }
 
-ul {
+.navbar .nav-links ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 60px;
+    padding: 0 60px 0 0;
 }
 
-li {
+.navbar .nav-links ul li {
     list-style-type: none;
-
+    margin: 0 30px;
 }
 
 header nav a {
@@ -39,6 +45,11 @@ header nav a {
     font-size: 1.2rem;
     text-decoration: none;
 }
+
+
+/* Hamburger menu */
+
+
 
 .reservation {
     position: absolute;
@@ -63,7 +74,7 @@ header nav a {
 }
 
 .reservation button {
-    margin: auto 20px;
+    margin: 20px;
     height: 35px;
     width: 100px;
     border-radius: 5px;
@@ -149,6 +160,7 @@ input::placeholder {
 .img-about-us {
     width: 300px;
     height: 400px;
+    margin: 10px;
 }
 
 .img-about-us img {
@@ -178,6 +190,10 @@ input::placeholder {
 }
 
 @media screen and (max-width: 970px) {
+    .nav-links {
+        display: none;
+    }
+
     .about-us {
         margin-top: 1px;
         display: grid;
@@ -198,10 +214,27 @@ input::placeholder {
         padding: 0 30px;
     }
 
+    .der-1,
+    .der-2,
     .der-3,
     .der-4 {
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 50px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .about-us {
+        margin-top: 1px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "content"
+            "img-1"
+            "img-2";
     }
 
+    .about-us h2 {
+        margin-top: 35px;
+    }
 }
