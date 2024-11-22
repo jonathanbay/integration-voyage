@@ -404,7 +404,7 @@ input::placeholder {
         margin-top: 1px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
             "content"
             "img-1"
@@ -413,6 +413,10 @@ input::placeholder {
 
     .about-us h2 {
         margin-top: 35px;
+    }
+
+    .about-us-content button {
+        width: 100px;
     }
 }
 
@@ -423,5 +427,12 @@ input::placeholder {
 
     .footer i {
         margin: 10px 10px;
+    }
+}
+
+@media screen and (max-width : 445px) {
+    .about-us-content button {
+        width: 100px;
+        height: 25px;
     }
 }
