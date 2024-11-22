@@ -5,9 +5,9 @@ var swiper = new Swiper(".swiper", {
   initialSlide: 2,
   speed: 600,
   loop: true,
-  // autoplay: {
-  //   delay: 1500,
-  // },
+  autoplay: {
+    delay: 1500,
+  },
   preventClicks: true,
   slidesPerView: "auto",
   coverflowEffect: {
