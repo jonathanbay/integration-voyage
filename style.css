@@ -27,6 +27,12 @@ header {
 
 }
 
+.navbar i {
+    font-size: 2.5rem;
+    color: rgb(221, 224, 40);
+    display: none;
+}
+
 .navbar .nav-links ul {
     display: flex;
     align-items: center;
@@ -371,6 +377,14 @@ input::placeholder {
         display: none;
     }
 
+    .navbar i {
+        display: block;
+    }
+
+    .navbar #logo {
+        padding: 0;
+    }
+
     .about-us {
         margin-top: 1px;
         display: grid;
@@ -434,5 +448,9 @@ input::placeholder {
     .about-us-content button {
         width: 100px;
         height: 25px;
+    }
+
+    .navbar #logo {
+        font-size: 1.3rem;
     }
 }
